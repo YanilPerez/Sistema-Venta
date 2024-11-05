@@ -21,12 +21,12 @@ public class MenuMenuItemDao implements MenuMenuItenDaoI {
         lista.add(new MenuMenuItenTO("Edit", idioma.getProperty("menuitem.nombre.postulante"), "miselectall"));
         lista.add(new MenuMenuItenTO("Producto", "Reg. Producto", "miregproduct"));
         lista.add(new MenuMenuItenTO("Producto", "Ver2", "miver2"));
-        lista.add(new MenuMenuItenTO("Producto", "Auto Complete", "miautcomp"));
         lista.add(new MenuMenuItenTO("Producto", "Reg. Cuenta", "createaccount"));
+        lista.add(new MenuMenuItenTO("Producto", "Auto Complete", "miautcomp"));
         lista.add(new MenuMenuItenTO("Principal", "Cliente", "cliente"));
         lista.add(new MenuMenuItenTO("Principal", "Rep. Venta", "repventa"));
+        lista.add(new MenuMenuItenTO("Principal", "Descripcion Sug.", "miformato"));
         lista.add(new MenuMenuItenTO("Principal", "Reg. Venta", "regventa"));
-        lista.add(new MenuMenuItenTO("Principal", "Formatos", "miformato"));
 
         List<MenuMenuItenTO> accesoReal = new ArrayList<>();
         switch (perfil) {
