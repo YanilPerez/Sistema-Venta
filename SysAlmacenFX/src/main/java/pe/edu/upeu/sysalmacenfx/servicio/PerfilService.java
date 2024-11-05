@@ -2,11 +2,13 @@ package pe.edu.upeu.sysalmacenfx.servicio;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pe.edu.upeu.sysalmacenfx.dto.ComboBoxOption;
 import pe.edu.upeu.sysalmacenfx.modelo.CompCarrito;
 import pe.edu.upeu.sysalmacenfx.modelo.Perfil;
 import pe.edu.upeu.sysalmacenfx.repositorio.CompCarritoRepository;
 import pe.edu.upeu.sysalmacenfx.repositorio.PerfilRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -39,6 +41,15 @@ public class PerfilService {
         repo.deleteById(id);
     }
 
+    public List<ComboBoxOption> listaPerfilCombobox(){
+        List<ComboBoxOption> listar =new ArrayList<>();
+        for (Perfil perf : repo.findAll()) {
+            listar.add(new ComboBoxOption(String.valueOf(perf.getIdPerfil()),
+                    perf.getNombre()
+            ));
+        }
+        return listar;
+    }
     public Perfil searchById(Long id) {
         return repo.findById(id).orElse(null);
     }

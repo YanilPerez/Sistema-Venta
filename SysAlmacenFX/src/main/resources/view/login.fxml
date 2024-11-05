@@ -7,14 +7,14 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane style="-fx-background-color: #2e354f;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysalmacenfx.control.LoginController">
+<AnchorPane style="-fx-background-color: #2e343a;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysalmacenfx.control.LoginController">
    <children>
       <AnchorPane AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
          <children>
-            <Circle fill="#e80808" layoutX="34.0" layoutY="33.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#e8ff1f" layoutX="80.0" layoutY="33.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#44ff1f" layoutX="126.0" layoutY="33.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-            <Label layoutX="182.0" layoutY="20.0" text="Login SysAlmacen" textFill="#b5abd1">
+            <Circle fill="#da4b86" layoutX="28.0" layoutY="27.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#fdf969" layoutX="65.0" layoutY="27.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#abf868" layoutX="101.0" layoutY="27.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="182.0" layoutY="20.0" text="Login SysAlmacen" textFill="#e2e1e4">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -34,22 +34,22 @@
          </children></AnchorPane>
       <AnchorPane layoutX="14.0" layoutY="216.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
          <children>
-            <AnchorPane style="-fx-border-color: #b5abd1; -fx-border-radius: 2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <AnchorPane style="-fx-border-color: #181143; -fx-border-radius: 2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <padding>
                   <Insets bottom="10.0" left="10.0" />
                </padding>
                <children>
-                  <Label layoutX="27.0" layoutY="28.0" prefHeight="17.0" prefWidth="75.0" text="Usuario:" textFill="#b5abd1" />
-                  <TextField fx:id="txtUsuario" layoutX="104.0" layoutY="24.0" prefHeight="25.0" prefWidth="206.0" />
+                  <Label layoutX="27.0" layoutY="20.0" prefHeight="17.0" prefWidth="75.0" text="Usuario:" textFill="WHITE" />
+                  <TextField fx:id="txtUsuario" layoutX="102.0" layoutY="16.0" prefHeight="25.0" prefWidth="206.0" style="-fx-background-color: #a7a1b4;" />
                </children>
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
             </AnchorPane>
-            <AnchorPane layoutY="65.0" style="-fx-border-color: #b5abd1; -fx-border-radius: 2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <AnchorPane layoutY="65.0" style="-fx-border-color: #181143; -fx-border-radius: 2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <children>
-                  <Label layoutX="25.0" layoutY="34.0" text="Clave:" textFill="#b5abd1" />
-                  <PasswordField fx:id="txtClave" layoutX="104.0" layoutY="30.0" prefHeight="25.0" prefWidth="206.0" />
+                  <Label layoutX="27.0" layoutY="19.0" text="Clave:" textFill="WHITE" />
+                  <PasswordField fx:id="txtClave" layoutX="107.0" layoutY="17.0" prefHeight="25.0" prefWidth="206.0" style="-fx-background-color: #a7a1b4;" />
                </children>
                <padding>
                   <Insets bottom="10.0" />
@@ -58,7 +58,10 @@
          </children></AnchorPane>
       <AnchorPane layoutX="5.0" layoutY="360.0" prefHeight="61.0" style="-fx-background-color: yellow;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Button fx:id="btnIngresar" onAction="#login" layoutX="77.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #43bb73;" text="Ingresar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="btnIngresar" layoutX="77.0" layoutY="14.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #13072e;" text="Ingresar" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="21.0" />
+               </font></Button>
          </children></AnchorPane>
    </children>
 </AnchorPane>

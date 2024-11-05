@@ -4,9 +4,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pe.edu.upeu.drogeriafx.dto.ComboBoxOption;
-import pe.edu.upeu.drogeriafx.modelo.Formato;
-import pe.edu.upeu.drogeriafx.repositorio.FormatoRepository;
+import pe.edu.upeu.sysalmacenfx.dto.ComboBoxOption;
+import pe.edu.upeu.sysalmacenfx.modelo.Formato;
+import pe.edu.upeu.sysalmacenfx.repositorio.FormatoRepository;
+
 
 import java.util.ArrayList;
 import java.util.List;

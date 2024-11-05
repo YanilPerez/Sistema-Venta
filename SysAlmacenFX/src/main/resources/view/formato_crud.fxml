@@ -2,9 +2,10 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox fx:id="miContenedor" spacing="10" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysalmacenfx.control.FormatoController">
+<VBox fx:id="miContenedor" spacing="10" style="-fx-background-color: #2e343a;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysalmacenfx.control.FormatoController">
     <Label styleClass="titulo" text="Gestión de Formatos" />
 
     <TableView fx:id="formatoTable" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
@@ -14,8 +15,22 @@
     <HBox alignment="CENTER" spacing="10">
         <TextField fx:id="txtNombreFormato" promptText="Nombre del Formato" />
         <TextField fx:id="txtDescripcion" promptText="Descripción" />
-        <Button onAction="#validarFormulario" text="Agregar" />
-        <Button onAction="#clearForm" text="Eliminar" />
+        <Button onAction="#validarFormulario" style="-fx-background-color: #3f2182;" text="Agregar" textFill="WHITE">
+         <effect>
+            <Glow>
+               <input>
+                  <DisplacementMap>
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </input>
+            </Glow>
+         </effect></Button>
+        <Button onAction="#clearForm" style="-fx-background-color: #3f2182;" text="Eliminar" textFill="WHITE">
+         <effect>
+            <Glow />
+         </effect></Button>
     </HBox>
     <Label fx:id="lbnMsg" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="47.0" prefWidth="398.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="9" GridPane.rowSpan="2" />
    <padding>

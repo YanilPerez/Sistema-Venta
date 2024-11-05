@@ -7,6 +7,7 @@ import pe.edu.upeu.sysalmacenfx.modelo.Product;
 import pe.edu.upeu.sysalmacenfx.servicio.ProductService;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/products")
@@ -20,7 +21,7 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    public Product getProductById(@PathVariable Integer id) {
+    public Optional<Product> getProductById(@PathVariable Integer id) {
         return productService.getProductById(id);
     }
 

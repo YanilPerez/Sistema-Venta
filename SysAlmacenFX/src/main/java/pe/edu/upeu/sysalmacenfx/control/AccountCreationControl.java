@@ -15,22 +15,24 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import pe.edu.upeu.drogeriafx.componente.ColumnInfo;
-import pe.edu.upeu.drogeriafx.componente.ComboBoxAutoComplete;
-import pe.edu.upeu.drogeriafx.componente.TableViewHelper;
-import pe.edu.upeu.drogeriafx.dto.ComboBoxOption;
-import pe.edu.upeu.drogeriafx.modelo.Usuario;
-import pe.edu.upeu.drogeriafx.servicio.PerfilService;
-import pe.edu.upeu.drogeriafx.servicio.UsuarioService;
+import pe.edu.upeu.sysalmacenfx.componente.ColumnInfo;
+import pe.edu.upeu.sysalmacenfx.componente.ComboBoxAutoComplete;
+import pe.edu.upeu.sysalmacenfx.componente.TableViewHelper;
+import pe.edu.upeu.sysalmacenfx.dto.ComboBoxOption;
+import pe.edu.upeu.sysalmacenfx.modelo.Usuario;
+import pe.edu.upeu.sysalmacenfx.servicio.PerfilService;
+import pe.edu.upeu.sysalmacenfx.servicio.UsuarioService;
 
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-import static pe.edu.upeu.drogeriafx.componente.Toast.showToast;
+import static pe.edu.upeu.sysalmacenfx.componente.Toast.showToast;
+
 
 @Component
 public class AccountCreationControl {

@@ -5,13 +5,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="miContenedor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysalmacenfx.control.AccountCreationControl">
+<AnchorPane fx:id="miContenedor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #2e343a;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysalmacenfx.control.AccountCreationControl">
     <children>
         <VBox layoutY="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="410.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
             <children>
                 <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
                     <children>
-                        <GridPane layoutX="2.0" prefHeight="170.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="-5.0">
+                        <GridPane layoutX="2.0" maxWidth="1.7976931348623157E308" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="-5.0">
                             <columnConstraints>
                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="76.0" />
                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="162.33333333333334" />
@@ -29,12 +29,12 @@
                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                             <children>
-                                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="863.0" text="Cuenta Nueva" GridPane.columnSpan="2147483647">
+                                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="863.0" text="Registro de Cuentas" textFill="WHITE" GridPane.columnSpan="2147483647">
                                     <font>
                                         <Font name="System Bold" size="18.0" />
                                     </font>
                                 </Label>
-                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Nombre:" GridPane.rowIndex="1">
+                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Nombre:" textFill="WHITE" GridPane.rowIndex="1">
                                     <GridPane.margin>
                                         <Insets />
                                     </GridPane.margin>
@@ -44,7 +44,7 @@
                                     <font>
                                         <Font name="System Bold" size="12.0" />
                                     </font></Label>
-                                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Apellido:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Apellido:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                     <GridPane.margin>
                                         <Insets left="5.0" />
                                     </GridPane.margin>
@@ -52,7 +52,7 @@
                                         <Font name="System Bold" size="12.0" />
                                     </font>
                                 </Label>
-                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="User Name:" GridPane.rowIndex="2">
+                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="User Name:" textFill="WHITE" GridPane.rowIndex="2">
                                     <padding>
                                         <Insets left="5.0" />
                                     </padding>
@@ -60,7 +60,7 @@
                                         <Font name="System Bold" size="12.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Rol:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Rol:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                     <GridPane.margin>
                                         <Insets left="5.0" />
                                     </GridPane.margin>
@@ -76,7 +76,7 @@
                                         <Insets />
                                     </GridPane.margin>
                                 </TextField>
-                                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DNI:" GridPane.rowIndex="3">
+                                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="DNI:" textFill="WHITE" GridPane.rowIndex="3">
                                     <GridPane.margin>
                                         <Insets left="5.0" />
                                     </GridPane.margin>
@@ -85,7 +85,7 @@
                                     </font>
                                 </Label>
                                 <ComboBox fx:id="cbxRol" prefHeight="25.0" prefWidth="162.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Contraseña:" GridPane.rowIndex="4">
+                                <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Contraseña:" textFill="WHITE" GridPane.rowIndex="4">
                                     <GridPane.margin>
                                         <Insets left="5.0" />
                                     </GridPane.margin>
@@ -93,7 +93,7 @@
                                         <Font name="System Bold" size="12.0" />
                                     </font>
                                 </Label>
-                                <Label alignment="CENTER" layoutX="454.0" layoutY="40.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Telf:" textFill="#2d2e2f" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                <Label alignment="CENTER" layoutX="454.0" layoutY="40.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="N° Cel" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                     <font>
                                         <Font name="System Bold" size="12.0" />
                                     </font></Label>
@@ -102,26 +102,29 @@
                                         <Insets />
                                     </GridPane.margin>
                                 </TextField>
-                                <TextField fx:id="txtContra" layoutX="86.0" layoutY="73.0" prefHeight="25.0" prefWidth="211.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                                <TextField fx:id="txtContra" layoutX="86.0" layoutY="73.0" prefHeight="25.0" prefWidth="233.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
                                     <GridPane.margin>
                                         <Insets right="35.0" />
                                     </GridPane.margin></TextField>
-                                <Button fx:id="btnCrear" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#validarFormulario" style="-fx-background-color: white;" text="Crear" textFill="#2e354f" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                <Button fx:id="btnCrear" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#validarFormulario" style="-fx-background-color: #2e343a; -fx-border-radius: RED;" text="Crear" textFill="#32da04" GridPane.columnIndex="5" GridPane.rowIndex="4">
                                     <GridPane.margin>
                                         <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
                                     </GridPane.margin>
                                     <font>
-                                        <Font name="System Bold" size="12.0" />
+                                        <Font name="System Bold" size="15.0" />
                                     </font></Button>
-                                <Button fx:id="btnBorrar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#cancelarAccion" prefHeight="22.0" prefWidth="62.0" style="-fx-background-color: white;" text="Borrar" textFill="#cd0000" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                <Button fx:id="btnBorrar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#cancelarAccion" prefHeight="22.0" prefWidth="62.0" style="-fx-background-color: #2e343a;" text="Borrar" textFill="#d10404" GridPane.columnIndex="6" GridPane.rowIndex="4">
                                     <GridPane.margin>
-                                        <Insets bottom="5.0" top="5.0" />
+                                        <Insets bottom="5.0" left="7.0" right="20.0" top="7.0" />
                                     </GridPane.margin>
                            <padding>
-                              <Insets bottom="5.0" top="5.0" />
+                              <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
                            </padding>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
                                 </Button>
-                                <Label layoutX="274.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Filtrar Usuario" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                <Label layoutX="274.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Filtrar Usuario" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="1">
                                     <font>
                                         <Font name="System Bold" size="12.0" />
                                     </font>
@@ -139,20 +142,23 @@
                                         <Font name="System Bold" size="12.0" />
                                     </font>
                                 </Button>
-                                <Label fx:id="lbnMsg" maxHeight="1.7976931348623157E308" prefHeight="34.0" prefWidth="256.0" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                                <Label fx:id="lbnMsg" maxHeight="1.7976931348623157E308" prefHeight="34.0" prefWidth="180.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="4">
                                     <GridPane.margin>
                                         <Insets left="10.0" />
                                     </GridPane.margin>
                                     <font>
                                         <Font name="System Bold" size="12.0" />
-                                    </font></Label>
+                                    </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding></Label>
                             </children>
                         </GridPane>
                     </children></AnchorPane>
             </children></VBox>
-        <HBox layoutX="14.0" layoutY="150.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="804.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="180.0">
+        <HBox layoutX="14.0" layoutY="164.0" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="164.0">
             <children>
-                <TableView fx:id="tableView" maxWidth="1.7976931348623157E308" />
+                <TableView fx:id="tableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #513f80;" />
             </children></HBox>
     </children>
 </AnchorPane>

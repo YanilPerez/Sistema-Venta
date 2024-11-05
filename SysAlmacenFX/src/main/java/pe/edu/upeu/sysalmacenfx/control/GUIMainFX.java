@@ -96,7 +96,6 @@ public class GUIMainFX {
         bp.setCenter(tabPaneFx);
     }
 
-
     public int[] contarMenuMunuItem(List<MenuMenuItenTO> data) {
         int menui = 0, menuitem = 0;
         String menuN = "";
@@ -133,16 +132,34 @@ public class GUIMainFX {
                 }
             }
 
-            if(((MenuItem) e.getSource()).getId().equals("mimiautcomp")){
+
+
+            if(((MenuItem) e.getSource()).getId().equals("micreateaccount")){
                 tabPaneFx.getTabs().clear();
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/main_prod_autocomp.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/create_account.fxml"));
                 loader.setControllerFactory(context::getBean);
                 Parent paneFromFXML;
                 try {
                     paneFromFXML = loader.load(); // Cargar el contenido FXML
                     ScrollPane dd= new ScrollPane(paneFromFXML);
                     //mc.setContexto(ctx);
-                    Tab clienteTab = new Tab("Form Autocomplete",dd );
+                    Tab clienteTab = new Tab("Reg. Form.",dd );
+                    tabPaneFx.getTabs().add(clienteTab);
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+
+            if(((MenuItem) e.getSource()).getId().equals("mimiformato")){
+                tabPaneFx.getTabs().clear();
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/formato_crud.fxml"));
+                loader.setControllerFactory(context::getBean);
+                Parent paneFromFXML;
+                try {
+                    paneFromFXML = loader.load(); // Cargar el contenido FXML
+                    ScrollPane dd= new ScrollPane(paneFromFXML);
+                    //mc.setContexto(ctx);
+                    Tab clienteTab = new Tab("Mis formatos",dd );
                     tabPaneFx.getTabs().add(clienteTab);
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
@@ -154,22 +171,22 @@ public class GUIMainFX {
 
                 tabPaneFx.getTabs().clear();
 
-               try {
-                   FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/login.fxml"));
-                   fxmlLoader.setControllerFactory(context::getBean);
-                   parent= fxmlLoader.load();
-                   Scene scene = new Scene(parent); //Punto (1) Diana
-                   stage.sizeToScene();
-                   stage.setScene(scene);
-                   stage.centerOnScreen(); // Punto (1) Mary
-                   stage.setTitle("SysAlmacen Spring Java-FX");
-                   stage.setResizable(false); //Miael (0.8)
-                   stage.show();
+                try {
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/login.fxml"));
+                    fxmlLoader.setControllerFactory(context::getBean);
+                    parent= fxmlLoader.load();
+                    Scene scene = new Scene(parent); //Punto (1) Diana
+                    stage.sizeToScene();
+                    stage.setScene(scene);
+                    stage.centerOnScreen(); // Punto (1) Mary
+                    stage.setTitle("SysAlmacen Spring Java-FX");
+                    stage.setResizable(false); //Miael (0.8)
+                    stage.show();
 
 
-               }catch (Exception ex){
-                   throw new RuntimeException(ex);
-               }
+                }catch (Exception ex){
+                    throw new RuntimeException(ex);
+                }
 
             }
 
@@ -187,6 +204,5 @@ public class GUIMainFX {
             }
         }
     }
-
 
 }

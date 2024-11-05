@@ -14,11 +14,12 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import pe.edu.upeu.drogeriafx.componente.ColumnInfo;
-import pe.edu.upeu.drogeriafx.componente.TableViewHelper;
-import pe.edu.upeu.drogeriafx.componente.Toast;
-import pe.edu.upeu.drogeriafx.modelo.Formato;
-import pe.edu.upeu.drogeriafx.servicio.FormatoService;
+import pe.edu.upeu.sysalmacenfx.componente.ColumnInfo;
+import pe.edu.upeu.sysalmacenfx.componente.TableViewHelper;
+import pe.edu.upeu.sysalmacenfx.componente.Toast;
+import pe.edu.upeu.sysalmacenfx.modelo.Formato;
+import pe.edu.upeu.sysalmacenfx.servicio.FormatoService;
+
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -90,7 +91,7 @@ public class FormatoController {
     public void listar() {
         try {
             formatoTable.getItems().clear();
-            listarFormato = FXCollections.observableArrayList(fs.list());
+            listarFormato = FXCollections.observableArrayList((Formato) fs.list());
             formatoTable.getItems().addAll(listarFormato);
         } catch (Exception e) {
             System.out.println(e.getMessage());
