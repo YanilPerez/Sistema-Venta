@@ -1,5 +1,5 @@
 package pe.edu.upeu.sysalmacenfx.pruebas;
-
+//y
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import pe.edu.upeu.sysalmacenfx.SysAlmacenFxApplication;
