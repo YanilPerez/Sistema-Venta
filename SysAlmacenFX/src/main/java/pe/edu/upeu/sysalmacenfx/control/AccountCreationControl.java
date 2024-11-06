@@ -37,7 +37,7 @@ import static pe.edu.upeu.sysalmacenfx.componente.Toast.showToast;
 @Component
 public class AccountCreationControl {
     @FXML
-    TextField txtNombre,txtApellido,txtDNI,txtTelf,txtContra,txtUserName,txtFiltroDato;
+    TextField txtNombr,txtApellid,txtDNI,txtTelf,txtContr,txtUserNam,txtFiltroDat;
 
     @FXML
     Label lbnMsg;
