@@ -1,5 +1,5 @@
 package pe.edu.upeu.sysalmacenfx.componente;
-
+//y
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.List;
