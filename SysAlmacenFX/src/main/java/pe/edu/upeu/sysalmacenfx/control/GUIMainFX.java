@@ -137,7 +137,7 @@ public class GUIMainFX {
 
             if(((MenuItem) e.getSource()).getId().equals("micreateaccount")){
                 tabPaneFx.getTabs().clear();
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/create_account.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/create_acount.fxml"));
                 loader.setControllerFactory(context::getBean);
                 Parent paneFromFXML;
                 try {
@@ -154,7 +154,7 @@ public class GUIMainFX {
 
             if(((MenuItem) e.getSource()).getId().equals("mirepventa")){
                 tabPaneFx.getTabs().clear();
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/GenerateSaleView.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/GeneratSaleView.fxml"));
                 loader.setControllerFactory(context::getBean);
                 Parent paneFromFXML;
                 try {
