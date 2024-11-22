@@ -5,24 +5,24 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="miContenedor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #2e343a;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysalmacenfx.control.ProductoController">
+<AnchorPane fx:id="miContenedor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysalmacenfx.control.ProductoController">
     <children>
         <VBox layoutX="14.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
             <children>
                 <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
                     <children>
-                        <Label layoutX="14.0" layoutY="14.0" text="Gestionar Producto" textFill="WHITE">
+                        <Label layoutX="14.0" layoutY="14.0" text="Gestionar Producto">
                             <font>
                                 <Font name="System Bold" size="16.0" />
                             </font>
                         </Label>
-                        <Label layoutX="274.0" layoutY="91.0" text="Filtrar Registro:" textFill="WHITE" />
+                        <Label layoutX="274.0" layoutY="91.0" text="Filtrar Registro:" />
                         <TextField fx:id="txtFiltroDato" layoutX="274.0" layoutY="109.0" />
                         <Button layoutX="435.0" layoutY="109.0" mnemonicParsing="false" text="Button" />
                     </children>
-               <VBox.margin>
-                  <Insets />
-               </VBox.margin></AnchorPane>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin></AnchorPane>
                 <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
                     <children>
                         <AnchorPane maxWidth="1.7976931348623157E308">
@@ -48,21 +48,21 @@
                                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                     </rowConstraints>
                                     <children>
-                                        <Label maxWidth="1.7976931348623157E308" style="-fx-alignment: center;" text="Formulario de Registro" textFill="WHITE" GridPane.columnSpan="2147483647">
+                                        <Label maxWidth="1.7976931348623157E308" style="-fx-alignment: center;" text="Formulario de Registro" GridPane.columnSpan="2147483647">
                                             <font>
                                                 <Font name="System Bold" size="20.0" />
                                             </font>
                                         </Label>
-                                        <Label text="Nombre Producto:" textFill="WHITE" GridPane.rowIndex="1">
+                                        <Label text="Nombre Producto:" GridPane.rowIndex="1">
                                             <opaqueInsets>
                                                 <Insets />
                                             </opaqueInsets></Label>
-                                        <Label text="P. unit" textFill="WHITE" GridPane.rowIndex="2" />
-                                        <Label text="Utilidad" textFill="WHITE" GridPane.rowIndex="3" />
-                                        <Label text="Stock" textFill="WHITE" GridPane.rowIndex="4" />
-                                        <Label text="Marca" textFill="WHITE" GridPane.rowIndex="5" />
-                                        <Label text="Categoría" textFill="WHITE" GridPane.rowIndex="6" />
-                                        <Label text="Unidad Medida" textFill="WHITE" GridPane.rowIndex="7" />
+                                        <Label text="P. unit" GridPane.rowIndex="2" />
+                                        <Label text="Utilidad" GridPane.rowIndex="3" />
+                                        <Label text="Stock" GridPane.rowIndex="4" />
+                                        <Label text="Marca" GridPane.rowIndex="5" />
+                                        <Label text="Categoría" GridPane.rowIndex="6" />
+                                        <Label text="Unidad Medida" GridPane.rowIndex="7" />
                                         <TextField fx:id="txtNombreProducto" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
                                             <opaqueInsets>
                                                 <Insets />
@@ -76,7 +76,7 @@
                                                 <Insets left="5.0" right="5.0" />
                                             </GridPane.margin>
                                         </TextField>
-                                        <Label text="P. unit Old" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                        <Label text="P. unit Old" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                             <GridPane.margin>
                                                 <Insets left="5.0" />
                                             </GridPane.margin>
@@ -96,7 +96,7 @@
                                                 <Insets left="5.0" right="5.0" />
                                             </GridPane.margin>
                                         </TextField>
-                                        <Label text="Stock Old" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                        <Label text="Stock Old" GridPane.columnIndex="2" GridPane.rowIndex="4" />
                                         <TextField fx:id="txtStockOld" GridPane.columnIndex="3" GridPane.rowIndex="4">
                                             <GridPane.margin>
                                                 <Insets left="5.0" right="5.0" />
@@ -117,25 +117,25 @@
                                                 <Insets left="5.0" right="5.0" />
                                             </GridPane.margin>
                                         </ComboBox>
-                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#validarFormulario" text="Guardar" GridPane.columnIndex="1" GridPane.rowIndex="8">
-                                 <GridPane.margin>
-                                    <Insets left="5.0" right="5.0" />
-                                 </GridPane.margin>
-                              </Button>
-                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#cancelarAccion" text="Cancelar" GridPane.columnIndex="2" GridPane.rowIndex="8">
-                                 <GridPane.margin>
-                                    <Insets left="5.0" right="5.0" />
-                                 </GridPane.margin>
-                              </Button>
-                              <Label fx:id="lbnMsg" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="47.0" prefWidth="398.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="9" GridPane.rowSpan="2" />
+                                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#validarFormulario" text="Guardar" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                            <GridPane.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                            </GridPane.margin>
+                                        </Button>
+                                        <Button maxWidth="1.7976931348623157E308" onAction="#cancelarAccion" mnemonicParsing="false" text="Cancelar" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                            <GridPane.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                            </GridPane.margin>
+                                        </Button>
+                                        <Label fx:id="lbnMsg" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="47.0" prefWidth="398.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="9" GridPane.rowSpan="2" />
                                     </children>
                                 </GridPane>
                             </children>
                         </AnchorPane>
                         <AnchorPane maxWidth="1.7976931348623157E308">
-                     <children>
-                        <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                     </children></AnchorPane>
+                            <children>
+                                <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                            </children></AnchorPane>
                     </children>
                 </HBox>
             </children>

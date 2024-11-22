@@ -232,13 +232,13 @@ public class VentaController {
         daoC.deleteCarAll(dniRuc.getText());
         listar();
         try {
-            /*jasperPrint= daoV.runReport(Long.parseLong(String.valueOf(idX.getIdVenta())));
+            jasperPrint= daoV.runReport(Long.parseLong(String.valueOf(idX.getIdVenta())));
             Platform.runLater(() -> {
                 ReportAlert reportAlert=new ReportAlert(jasperPrint);
                 reportAlert.show();
                  //ReportDialog reportDialog = new ReportDialog(jasperPrint);
                  //reportDialog.show();
-            });*/
+            });
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
