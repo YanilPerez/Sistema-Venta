@@ -20,9 +20,9 @@
                         <TextField fx:id="txtFiltroDato" layoutX="274.0" layoutY="109.0" />
                         <Button layoutX="435.0" layoutY="109.0" mnemonicParsing="false" text="Button" />
                     </children>
-                    <VBox.margin>
-                        <Insets />
-                    </VBox.margin></AnchorPane>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></AnchorPane>
                 <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
                     <children>
                         <AnchorPane maxWidth="1.7976931348623157E308">
@@ -117,25 +117,25 @@
                                                 <Insets left="5.0" right="5.0" />
                                             </GridPane.margin>
                                         </ComboBox>
-                                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#validarFormulario" text="Guardar" GridPane.columnIndex="1" GridPane.rowIndex="8">
-                                            <GridPane.margin>
-                                                <Insets left="5.0" right="5.0" />
-                                            </GridPane.margin>
-                                        </Button>
-                                        <Button maxWidth="1.7976931348623157E308" onAction="#cancelarAccion" mnemonicParsing="false" text="Cancelar" GridPane.columnIndex="2" GridPane.rowIndex="8">
-                                            <GridPane.margin>
-                                                <Insets left="5.0" right="5.0" />
-                                            </GridPane.margin>
-                                        </Button>
-                                        <Label fx:id="lbnMsg" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="47.0" prefWidth="398.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="9" GridPane.rowSpan="2" />
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#validarFormulario" text="Guardar" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button maxWidth="1.7976931348623157E308" onAction="#cancelarAccion" mnemonicParsing="false" text="Cancelar" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Label fx:id="lbnMsg" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="47.0" prefWidth="398.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="9" GridPane.rowSpan="2" />
                                     </children>
                                 </GridPane>
                             </children>
                         </AnchorPane>
                         <AnchorPane maxWidth="1.7976931348623157E308">
-                            <children>
-                                <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                            </children></AnchorPane>
+                     <children>
+                        <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                     </children></AnchorPane>
                     </children>
                 </HBox>
             </children>

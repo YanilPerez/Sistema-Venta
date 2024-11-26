@@ -236,6 +236,7 @@ public class ProductoController {
 
     @FXML
     public void validarFormulario() {
+
         formulario = new Producto();
         formulario.setNombre(txtNombreProducto.getText());
         formulario.setPu(Double.parseDouble(txtPUnit.getText()==""?"0":txtPUnit.getText()));

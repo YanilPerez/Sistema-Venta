@@ -1,10 +1,28 @@
 <!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
 <jasperReport name="Blank_A4" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c66f786a-cf16-4f91-8824-3527a31ac224">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="almacen"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<query language="sql"><![CDATA[]]></query>
 	<background splitType="Stretch"/>
-	<title height="79" splitType="Stretch"/>
-	<pageHeader height="35" splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="e6e61187-1008-4d08-844f-e927f92c773e" x="166" y="20" width="223" height="30" fontSize="20.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[Lista de Clientes]]></text>
+		</element>
+	</title>
+	<pageHeader height="53" splitType="Stretch">
+		<element kind="staticText" uuid="b69ee76f-eb53-4f4e-9574-da5c8a92b578" x="60" y="0" width="51" height="21">
+			<text><![CDATA[N° DNI]]></text>
+		</element>
+		<element kind="staticText" uuid="592fc720-e4e7-4ba0-a7c1-5a04338a2358" x="160" y="0" width="100" height="30">
+			<text><![CDATA[Nombre y Apellidos]]></text>
+		</element>
+		<element kind="staticText" uuid="4e1299e9-35e6-471e-83c1-d39e71639e56" x="289" y="0" width="100" height="30">
+			<text><![CDATA[Nom/ Raz. Social]]></text>
+		</element>
+		<element kind="staticText" uuid="cfc9f494-77a3-4426-a113-6fae8dfbd0d0" x="410" y="0" width="100" height="30">
+			<text><![CDATA[tt]]></text>
+		</element>
+	</pageHeader>
 	<columnHeader height="61" splitType="Stretch"/>
 	<detail>
 		<band height="125" splitType="Stretch"/>
